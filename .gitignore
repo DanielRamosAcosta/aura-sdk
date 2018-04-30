@@ -1,0 +1,6 @@
+node_modules
+AuraSDK
+build
+src/ts-interface/*.js
+src/ts-interface/*.js.map
+src/ts-interface/*.d.ts

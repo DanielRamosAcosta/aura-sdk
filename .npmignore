@@ -1,0 +1,8 @@
+node_modules
+examples
+AuraSDK/test code
+AuraSDK/AURA SDK Guide_2.0.0.pdf
+build
+!src/ts-interface/*.js
+!src/ts-interface/*.js.map
+!src/ts-interface/*.d.ts

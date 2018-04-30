@@ -1,0 +1,32 @@
+{
+  "name": "aura-sdk",
+  "version": "1.0.0",
+  "description": "ASUS's Aura Sync Node.js bindings",
+  "main": "src/ts-interface/aura-sdk.js",
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "compile:cpp": "node-gyp rebuild",
+    "compile:ts": "tsc",
+    "start": "node test.js"
+  },
+  "author": "Daniel Ramos",
+  "license": "MIT",
+  "dependencies": {
+    "color": "^3.0.0",
+    "nan": "^2.10.0",
+    "node-gyp": "^3.6.2"
+  },
+  "devDependencies": {
+    "@types/color": "^3.0.0",
+    "@types/node": "^8.0.0",
+    "typescript": "^2.8.3"
+  },
+  "keywords": [
+    "ASUS",
+    "Aura",
+    "Sync"
+  ],
+  "bugs": "https://github.com/DanielRamosAcosta/aura-sdk/issues",
+  "repository": "https://github.com/DanielRamosAcosta/aura-sdk",
+  "homepage": "https://github.com/DanielRamosAcosta/aura-sdk"
+}
