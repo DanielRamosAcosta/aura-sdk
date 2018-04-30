@@ -45,17 +45,17 @@ main()
 
 This is the main SDK entrypoint. It creates instances for the different devices types.
 
-* **AuraSDK#createMbController()**: Creates an instance of the motherboard controller
-* **AuraSDK#createGPUController()**: Creates an instance of the GPU controller
-* **AuraSDK#createDramController()**: Creates an instance of the DRAM controller
+* **`AuraSDK#createMbController()`**: Creates an instance of the motherboard controller
+* **`AuraSDK#createGPUController()`**: Creates an instance of the GPU controller
+* **`AuraSDK#createDramController()`**: Creates an instance of the DRAM controller
 
 ### Controller
 
-* **Controller.joinControllers(controllers: Controller[])**: Joins multiple controllers into one array of callable functions. See the the example for usage.
-* **Controller#getLedCount()**: Get number of controllable leds in this controller.
-* **Controller#getDeviceName()**: Get the device name (motherboard, GPU, DRAM).
-* **Controller#setColor(index: number, color: string)**: Get the device name (motherboard, GPU, DRAM).
-* **Controller#setAllColor(color: string)**: Sets the color of all the leds in the controller.
-* **Controller#setColorNow(index: number, color: string)**: Sets the color of the LED at the given index and immediately updates them.
-* **Controller#setAllColorNow(color: string)**: Sets the color of all the leds in the controller and immediately updates them.
-* **Controller#updateColor()**: Updates the LEDs attached to the controller to reflect the current state.
+* **`Controller.joinControllers(controllers: Controller[])`**: Joins multiple controllers into one array of callable functions. See the the example for usage.
+* **`Controller#getLedCount()`**: Get number of controllable leds in this controller.
+* **`Controller#getDeviceName()`**: Get the device name (motherboard, GPU, DRAM).
+* **`Controller#setColor(index: number, color: string)`**: Get the device name (motherboard, GPU, DRAM).
+* **`Controller#setAllColor(color: string)`**: Sets the color of all the leds in the controller.
+* **`Controller#setColorNow(index: number, color: string)`**: Sets the color of the LED at the given index and immediately updates them.
+* **`Controller#setAllColorNow(color: string)`**: Sets the color of all the leds in the controller and immediately updates them.
+* **`Controller#updateColor()`**: Updates the LEDs attached to the controller to reflect the current state.
