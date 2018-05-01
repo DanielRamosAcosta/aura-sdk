@@ -1,9 +1,11 @@
 # aura-sdk
 
-[![aura-sdk](https://img.shields.io/npm/v/aura-sdk.svg)](https://www.npmjs.com/package/aura-sdk)
+[![NPM Version](https://img.shields.io/npm/v/aura-sdk.svg)](https://www.npmjs.com/package/aura-sdk)
 
 ASUS Aura's SDK Nodejs C++ bindings. This package provides an high-level API
 to manage your rig led show!
+
+![RGB Stepper Demo](https://raw.githubusercontent.com/caolan/async/master/example/rgb-stepper.gif)
 
 ## Usage
 
