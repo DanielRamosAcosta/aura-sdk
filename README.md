@@ -18,21 +18,23 @@ device. This examples creates an RGB stepper
 
 ```javascript
 const { sleep } = require('./sleep')
-const { AuraSDK } = require('..')
-
-const auraSDK = new AuraSDK()
+const { AuraSDK, Controller } = require('..')
 
 async function main() {
-  const mbController = auraSDK.createMbController()
-  const gpuController = auraSDK.createGPUController()
-  const dramController = auraSDK.createDramController()
+  const auraSDK = new AuraSDK()
+
+  const leds = Controller.joinControllers([
+    auraSDK.createMbController(),
+    auraSDK.createGPUController(),
+    auraSDK.createDramController()
+  ])
 
   while (true) {
-    for(let i = 0; i < 360; i++) {
-      mbController.setAllColorNow(`hsl(${i}, 100%, 50%)`)
-      gpuController.setAllColorNow(`hsl(${i}, 100%, 50%)`)
-      dramController.setAllColorNow(`hsl(${i}, 100%, 50%)`)
-      await sleep(50)
+    for (color of ['red', 'green', 'blue']) {
+      for (let led of leds) {
+        led.setColorNow(color)
+        await sleep(1000)
+      }
     }
   }
 }
