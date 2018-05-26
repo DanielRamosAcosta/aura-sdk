@@ -8,7 +8,7 @@
     "compile:cpp": "node-gyp rebuild",
     "compile:ts": "tsc",
     "start": "node test.js",
-    "preinstall": "node ./src/preinstall-check.js"
+    "preinstall": "node ./scripts/preinstall-check.js"
   },
   "author": "Daniel Ramos",
   "license": "MIT",
