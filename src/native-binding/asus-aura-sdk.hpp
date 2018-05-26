@@ -118,37 +118,36 @@ namespace AsusAuraSDK {
     return SetGPUColor(handle, color, size);
   }
 
-
-  DWORD createClaymoreKeyboard () {
-    // TODO
+  DWORD createClaymoreKeyboard (ClaymoreKeyboardLightControl* handle) {
+    return CreateClaymoreKeyboard(handle);
   }
 
-  DWORD setClaymoreKeyboardMode () {
-    // TODO
+  DWORD setClaymoreKeyboardMode (ClaymoreKeyboardLightControl handle, DWORD mode) {
+    return SetClaymoreKeyboardMode(handle, mode);
   }
 
-  DWORD getClaymoreKeyboardLedCount () {
-    // TODO
+  DWORD getClaymoreKeyboardLedCount (ClaymoreKeyboardLightControl handle) {
+    return GetClaymoreKeyboardLedCount(handle);
   }
 
-  DWORD setClaymoreKeyboardColor () {
-    // TODO
+  DWORD setClaymoreKeyboardColor (ClaymoreKeyboardLightControl handle, BYTE* color, DWORD size) {
+    return SetClaymoreKeyboardColor(handle, color, size);
   }
 
-  DWORD createRogMouse () {
-    // TODO
+  DWORD createRogMouse (RogMouseLightControl* handle) {
+    return CreateRogMouse(handle);
   }
 
-  DWORD setRogMouseMode () {
-    // TODO
+  DWORD setRogMouseMode (RogMouseLightControl* handle, DWORD mode) {
+    return SetRogMouseMode(handle, mode);
   }
 
-  DWORD rogMouseLedCount () {
-    // TODO
+  DWORD rogMouseLedCount (RogMouseLightControl* handle) {
+    return RogMouseLedCount(handle);
   }
 
-  DWORD setRogMouseColor () {
-    // TODO
+  DWORD setRogMouseColor (RogMouseLightControl* handle, BYTE* color, DWORD size) {
+    return SetRogMouseColor(handle, color, size);
   }
 
   // TODO: Wait until ASUS updates their SDK for Dram support

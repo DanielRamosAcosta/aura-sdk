@@ -18,14 +18,17 @@ class AuraSDKInterface : public Nan::ObjectWrap {
     tpl->InstanceTemplate()->SetInternalFieldCount(1);
 
     Nan::SetPrototypeMethod(tpl, "setupMb", setupMb);
-    Nan::SetPrototypeMethod(tpl, "setMbcolor", setMbcolor);
+    Nan::SetPrototypeMethod(tpl, "setMbColor", setMbColor);
     Nan::SetPrototypeMethod(tpl, "updateMbColor", updateMbColor);
     Nan::SetPrototypeMethod(tpl, "setupGPU", setupGPU);
-    Nan::SetPrototypeMethod(tpl, "setGPUcolor", setGPUcolor);
+    Nan::SetPrototypeMethod(tpl, "setGPUColor", setGPUColor);
     Nan::SetPrototypeMethod(tpl, "updateGPUColor", updateGPUColor);
     Nan::SetPrototypeMethod(tpl, "setupDram", setupDram);
-    Nan::SetPrototypeMethod(tpl, "setDramcolor", setDramcolor);
+    Nan::SetPrototypeMethod(tpl, "setDramColor", setDramColor);
     Nan::SetPrototypeMethod(tpl, "updateDramColor", updateDramColor);
+    Nan::SetPrototypeMethod(tpl, "setupKeyboard", setupKeyboard);
+    Nan::SetPrototypeMethod(tpl, "setKeyboardColor", setKeyboardColor);
+    Nan::SetPrototypeMethod(tpl, "updateKeyboardColor", updateKeyboardColor);
 
     constructor().Reset(Nan::GetFunction(tpl).ToLocalChecked());
     Nan::Set(target, Nan::New("AuraSDKInterface").ToLocalChecked(), Nan::GetFunction(tpl).ToLocalChecked());
@@ -58,11 +61,11 @@ class AuraSDKInterface : public Nan::ObjectWrap {
     info.GetReturnValue().Set(val);
   }
 
-  static NAN_METHOD(setMbcolor) {
+  static NAN_METHOD(setMbColor) {
     AuraSDKInterface* obj = Nan::ObjectWrap::Unwrap<AuraSDKInterface>(info.Holder());
     DRA::AuraSDK *auraSDK = obj->auraSDK;
 
-    auraSDK->setMbcolor(
+    auraSDK->setMbColor(
       info[0]->Int32Value(),
       info[1]->Int32Value(),
       info[2]->Int32Value(),
@@ -85,11 +88,11 @@ class AuraSDKInterface : public Nan::ObjectWrap {
     info.GetReturnValue().Set(val);
   }
 
-  static NAN_METHOD(setGPUcolor) {
+  static NAN_METHOD(setGPUColor) {
     AuraSDKInterface* obj = Nan::ObjectWrap::Unwrap<AuraSDKInterface>(info.Holder());
     DRA::AuraSDK *auraSDK = obj->auraSDK;
 
-    auraSDK->setGPUcolor(
+    auraSDK->setGPUColor(
       info[0]->Int32Value(),
       info[1]->Int32Value(),
       info[2]->Int32Value(),
@@ -112,11 +115,11 @@ class AuraSDKInterface : public Nan::ObjectWrap {
     info.GetReturnValue().Set(val);
   }
 
-  static NAN_METHOD(setDramcolor) {
+  static NAN_METHOD(setDramColor) {
     AuraSDKInterface* obj = Nan::ObjectWrap::Unwrap<AuraSDKInterface>(info.Holder());
     DRA::AuraSDK *auraSDK = obj->auraSDK;
 
-    auraSDK->setDramcolor(
+    auraSDK->setDramColor(
       info[0]->Int32Value(),
       info[1]->Int32Value(),
       info[2]->Int32Value(),
@@ -129,6 +132,33 @@ class AuraSDKInterface : public Nan::ObjectWrap {
     DRA::AuraSDK *auraSDK = obj->auraSDK;
 
     auraSDK->updateDramColor(info[0]->Int32Value());
+  }
+
+  static NAN_METHOD(setupKeyboard) {
+    AuraSDKInterface* obj = Nan::ObjectWrap::Unwrap<AuraSDKInterface>(info.Holder());
+    DRA::AuraSDK *auraSDK = obj->auraSDK;
+
+    unsigned val = auraSDK->setupKeyboard();
+    info.GetReturnValue().Set(val);
+  }
+
+  static NAN_METHOD(setKeyboardColor) {
+    AuraSDKInterface* obj = Nan::ObjectWrap::Unwrap<AuraSDKInterface>(info.Holder());
+    DRA::AuraSDK *auraSDK = obj->auraSDK;
+
+    auraSDK->setKeyboardColor(
+      info[0]->Int32Value(),
+      info[1]->Int32Value(),
+      info[2]->Int32Value(),
+      info[3]->Int32Value()
+    );
+  }
+
+  static NAN_METHOD(updateKeyboardColor) {
+    AuraSDKInterface* obj = Nan::ObjectWrap::Unwrap<AuraSDKInterface>(info.Holder());
+    DRA::AuraSDK *auraSDK = obj->auraSDK;
+
+    auraSDK->updateKeyboardColor();
   }
 
   static inline Nan::Persistent<v8::Function> & constructor() {

@@ -23,7 +23,7 @@ export class AuraSDK {
   createMbController () {
     return new Controller('motherboard', {
       setup: () => this.auraSDKInterface.setupMb(),
-      setcolor: (i, r, g, b) => this.auraSDKInterface.setMbcolor(i, r, g, b),
+      setColor: (i, r, g, b) => this.auraSDKInterface.setMbColor(i, r, g, b),
       updateColor: () => this.auraSDKInterface.updateMbColor()
     })
   }
@@ -34,7 +34,7 @@ export class AuraSDK {
   createGPUController () {
     return new Controller('GPU', {
       setup: () => this.auraSDKInterface.setupGPU(),
-      setcolor: (i, r, g, b) => this.auraSDKInterface.setGPUcolor(i, r, g, b),
+      setColor: (i, r, g, b) => this.auraSDKInterface.setGPUColor(i, r, g, b),
       updateColor: () => this.auraSDKInterface.updateGPUColor()
     })
   }
@@ -46,8 +46,20 @@ export class AuraSDK {
     console.warn("DRAM controller isn't supported")
     return new Controller('DRAM', {
       setup: () => this.auraSDKInterface.setupDram(),
-      setcolor: (i, r, g, b) => this.auraSDKInterface.setDramcolor(i, r, g, b),
+      setColor: (i, r, g, b) => this.auraSDKInterface.setDramColor(i, r, g, b),
       updateColor: () => this.auraSDKInterface.updateDramColor()
     })
   }
+
+  /**
+   * Creates an instance of the Keyboard controller
+   */
+  createKeyboardController () {
+    return new Controller('Keyboard', {
+      setup: () => this.auraSDKInterface.setupKeyboard(),
+      setColor: (i, r, g, b) => this.auraSDKInterface.setKeyboardColor(i, r, g, b),
+      updateColor: () => this.auraSDKInterface.updateKeyboardColor()
+    })
+  }
 }
+

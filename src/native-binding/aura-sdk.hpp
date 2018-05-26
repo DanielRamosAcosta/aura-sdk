@@ -50,6 +50,11 @@ namespace DRA {
     uint32_t ledCountDram;
     BYTE* ledsDram;
 
+    uint32_t controllerCountKeyboard;
+    ClaymoreKeyboardLightControl* controllersKeyboard;
+    uint32_t ledCountKeyboard;
+    BYTE* ledsKeyboard;
+
     public:
 
     AuraSDK(std::string dllPath):
@@ -89,7 +94,7 @@ namespace DRA {
       return ledCountMb;
     }
 
-    void setMbcolor(unsigned index, unsigned r, unsigned g, unsigned b) {
+    void setMbColor(unsigned index, unsigned r, unsigned g, unsigned b) {
       ledsMb[(index * RGB_COUNT) + 0] = r;
       ledsMb[(index * RGB_COUNT) + 1] = b;
       ledsMb[(index * RGB_COUNT) + 2] = g;
@@ -120,7 +125,7 @@ namespace DRA {
       return ledCountGPU;
     }
 
-    void setGPUcolor(unsigned index, unsigned r, unsigned g, unsigned b) {
+    void setGPUColor(unsigned index, unsigned r, unsigned g, unsigned b) {
       ledsGPU[(index * RGB_COUNT) + 0] = r;
       ledsGPU[(index * RGB_COUNT) + 1] = g;
       ledsGPU[(index * RGB_COUNT) + 2] = b;
@@ -135,12 +140,56 @@ namespace DRA {
       return 0;
     }
 
-    void setDramcolor(unsigned index, unsigned r, unsigned g, unsigned b) {
+    void setDramColor(unsigned index, unsigned r, unsigned g, unsigned b) {
       // TODO: Wait until ASUS updates their SDK for Dram support
     }
 
     void updateDramColor (unsigned controller) {
       // TODO: Wait until ASUS updates their SDK for Dram support
+    }
+
+    unsigned setupKeyboard () {
+      printf("Entering setupKeyboard\n");
+      fflush(stdout);
+      controllersKeyboard = new ClaymoreKeyboardLightControl;
+      try {
+        printf("I'm going to execute createClaymoreKeyboard\n");
+        fflush(stdout);
+        controllerCountKeyboard = AsusAuraSDK::createClaymoreKeyboard(controllersKeyboard);
+        printf("All ended OK\n");
+        fflush(stdout);
+      } catch (const std::exception& e) {
+        printf("There was an exception %s\n", e.what());
+        fflush(stdout);
+      } catch (...) {
+        printf("There was a non std::exception exception\n");
+        fflush(stdout);
+      }
+
+      printf("After try-catch block\n");
+      fflush(stdout);
+
+      if (controllerCountKeyboard < 1) {
+        printf("warning: controllerCountKeyboard < 1\n");
+        fflush(stdout);
+        return 0;
+      }
+
+      ledCountKeyboard =  AsusAuraSDK::getClaymoreKeyboardLedCount(*controllersKeyboard);
+      AsusAuraSDK::setClaymoreKeyboardMode(*controllersKeyboard, LIGHT_CONTROLLER_MODES::SOFTWARE_MODE);
+      ledsKeyboard = new BYTE[(ledCountKeyboard) * RGB_COUNT];
+      ZeroMemory(ledsKeyboard, (ledCountKeyboard) * RGB_COUNT);
+      return ledCountKeyboard;
+    }
+
+    void setKeyboardColor(unsigned index, unsigned r, unsigned g, unsigned b) {
+      ledsKeyboard[(index * RGB_COUNT) + 0] = r;
+      ledsKeyboard[(index * RGB_COUNT) + 1] = b;
+      ledsKeyboard[(index * RGB_COUNT) + 2] = g;
+    }
+
+    void updateKeyboardColor () {
+      AsusAuraSDK::setClaymoreKeyboardColor(controllersKeyboard, ledsKeyboard, (ledCountKeyboard) * RGB_COUNT);
     }
   };
 }

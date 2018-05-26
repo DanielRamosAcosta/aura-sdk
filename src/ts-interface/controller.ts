@@ -2,7 +2,7 @@ import Color from 'color'
 
 export interface ISDKInjection {
   setup: () => number
-  setcolor: (index: number, r: number, g: number, b: number) => void
+  setColor: (index: number, r: number, g: number, b: number) => void
   updateColor: () => void
 }
 
@@ -58,7 +58,7 @@ export class Controller {
    */
   setColor (index: number, color: string) {
     const [r, g, b] = Color(color).rgb().array()
-    this.auraSDK.setcolor(index, Math.floor(r), Math.floor(g), Math.floor(b))
+    this.auraSDK.setColor(index, Math.floor(r), Math.floor(g), Math.floor(b))
   }
 
   /**
