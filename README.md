@@ -5,6 +5,8 @@
 ASUS Aura's SDK Nodejs C++ bindings. This package provides an high-level API
 to manage your rig led show!
 
+**WARNING**: Because Asus is only releasing their DLL for the 32bits arch, it only works and Node 32 bits.
+
 ![RGB Stepper Demo](https://raw.githubusercontent.com/DanielRamosAcosta/aura-sdk/master/example/rgb-stepper.gif)
 
 ## Usage
