@@ -19,7 +19,8 @@
             "AuraSDK/sdk/AURA_SDK.dll",
             "AuraSDK/device dll/vga/LED_DLL_forMB.dll",
             "AuraSDK/device dll/vga/Vender.dll",
-            "AuraSDK/device dll/vga/VGA_Extra.dll"
+            "AuraSDK/device dll/vga/VGA_Extra.dll",
+            "AuraSDK/device dll/kb/ClaymoreProtocol.dll"
           ]
         }
       ],

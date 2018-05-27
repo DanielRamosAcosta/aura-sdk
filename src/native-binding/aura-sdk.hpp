@@ -149,36 +149,20 @@ namespace DRA {
     }
 
     unsigned setupKeyboard () {
-      printf("Entering setupKeyboard\n");
-      fflush(stdout);
+      std::string currentDir = std::string(_getcwd( NULL, 0 ));
+      _chdir(dllPath_.c_str());
       controllersKeyboard = new ClaymoreKeyboardLightControl;
-      try {
-        printf("I'm going to execute createClaymoreKeyboard\n");
-        fflush(stdout);
-        controllerCountKeyboard = AsusAuraSDK::createClaymoreKeyboard(controllersKeyboard);
-        printf("All ended OK\n");
-        fflush(stdout);
-      } catch (const std::exception& e) {
-        printf("There was an exception %s\n", e.what());
-        fflush(stdout);
-      } catch (...) {
-        printf("There was a non std::exception exception\n");
-        fflush(stdout);
-      }
-
-      printf("After try-catch block\n");
-      fflush(stdout);
-
+      controllerCountKeyboard = AsusAuraSDK::createClaymoreKeyboard(controllersKeyboard);
       if (controllerCountKeyboard < 1) {
         printf("warning: controllerCountKeyboard < 1\n");
         fflush(stdout);
         return 0;
       }
-
       ledCountKeyboard =  AsusAuraSDK::getClaymoreKeyboardLedCount(*controllersKeyboard);
       AsusAuraSDK::setClaymoreKeyboardMode(*controllersKeyboard, LIGHT_CONTROLLER_MODES::SOFTWARE_MODE);
       ledsKeyboard = new BYTE[(ledCountKeyboard) * RGB_COUNT];
       ZeroMemory(ledsKeyboard, (ledCountKeyboard) * RGB_COUNT);
+      _chdir(currentDir.c_str());
       return ledCountKeyboard;
     }
 
