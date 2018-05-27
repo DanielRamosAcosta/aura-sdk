@@ -163,16 +163,22 @@ namespace DRA {
       ledsKeyboard = new BYTE[(ledCountKeyboard) * RGB_COUNT];
       ZeroMemory(ledsKeyboard, (ledCountKeyboard) * RGB_COUNT);
       _chdir(currentDir.c_str());
+      printf("keyboard initialized, number of leds: %d\n", ledCountKeyboard);
+      fflush(stdout);
       return ledCountKeyboard;
     }
 
     void setKeyboardColor(unsigned index, unsigned r, unsigned g, unsigned b) {
+      printf("Establishing led at %d to rgb(%d, %d, %d)\n", index, r, g, b);
+      fflush(stdout);
       ledsKeyboard[(index * RGB_COUNT) + 0] = r;
       ledsKeyboard[(index * RGB_COUNT) + 1] = b;
       ledsKeyboard[(index * RGB_COUNT) + 2] = g;
     }
 
     void updateKeyboardColor () {
+      printf("Updating keyboard\n");
+      fflush(stdout);
       AsusAuraSDK::setClaymoreKeyboardColor(controllersKeyboard, ledsKeyboard, (ledCountKeyboard) * RGB_COUNT);
     }
   };
