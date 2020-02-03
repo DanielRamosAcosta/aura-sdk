@@ -1,9 +1,3 @@
 node_modules
-AuraSDK
+*.log
 build
-src/ts-interface/*.js
-src/ts-interface/*.js.map
-src/ts-interface/*.d.ts
-src/*.js
-src/*.js.map
-src/*.d.ts

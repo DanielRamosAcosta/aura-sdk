@@ -1,0 +1,1246 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.22.27905.0 (4f968920).
+//
+// E:\Documentos\Proyectos Personales\Mios\AuraTutorial\AuraTutorial\Debug\AuraSdk_x86.tlh
+//
+// C++ source equivalent of Win32 type library F1AA5209-5217-4B82-BA7E-A68198999AFA
+// compiler-generated file created 08/13/19 at 23:20:44 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace AuraServiceLib {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("f1aa5209-5217-4b82-ba7e-a68198999afa"))
+/* LIBID */ __AuraServiceLib;
+struct __declspec(uuid("9fcf439b-f9ed-4f93-b775-13305be23e55"))
+/* dual interface */ IAuraDevelopement;
+struct __declspec(uuid("422f4703-45b9-460b-9530-b68e1173c292"))
+/* dual interface */ IAuraDeviceCollection;
+struct __declspec(uuid("9331bea3-2062-4e22-9297-1b3c065e909e"))
+/* dual interface */ IAuraDevice;
+struct __declspec(uuid("6a30d789-f5da-4f26-bf09-6dfb9dedf91e"))
+/* dual interface */ IAuraSyncDevice;
+struct __declspec(uuid("003065bc-b562-454e-adcb-a9b70042d486"))
+/* dual interface */ IAuraRgbLightCollection;
+struct __declspec(uuid("9af6260e-4311-417d-b3ef-b85a34cf3244"))
+/* dual interface */ IAuraRgbLight;
+struct __declspec(uuid("84838733-137e-4e3f-b54f-3330b6962a38"))
+/* dual interface */ IAuraEffectCollection;
+struct __declspec(uuid("a9657187-6d1a-4387-aa54-98fe83d65b5c"))
+/* dual interface */ IAuraEffect;
+struct __declspec(uuid("2fb786dd-63fa-46cc-9d34-cb0dfdc6616f"))
+/* dual interface */ IAuraRgbLightGroupCollection;
+struct __declspec(uuid("068e02ff-335b-45a4-a6e4-184f19c6ae38"))
+/* dual interface */ IAuraRgbLightGroup;
+struct __declspec(uuid("8d34bb84-7521-4561-8ace-774ebb41a51b"))
+/* dual interface */ IAuraHalInfoCollection;
+struct __declspec(uuid("ba174006-7901-4396-8a8d-ba5327e45fc6"))
+/* dual interface */ IAuraHalInfo;
+struct __declspec(uuid("86b5127b-4b88-4f02-8a59-7b7ff7bb53ef"))
+/* dual interface */ IAuraHal;
+struct __declspec(uuid("9791cafe-7576-41ff-9dda-93a9619cf413"))
+/* dual interface */ IAuraMbHal;
+struct __declspec(uuid("f9718389-f460-45b4-9cc7-b546a7dfb7b1"))
+/* dual interface */ IAuraHotPlugHal;
+struct __declspec(uuid("9664e7f9-1314-4a8e-90b1-6a72dca3515c"))
+/* dual interface */ IAuraHPHalIIDCollection;
+struct __declspec(uuid("b721f302-59ee-4101-a39f-b553804e6b67"))
+/* dual interface */ IAuraHPHalDIDCollection;
+struct __declspec(uuid("87b03dd6-59e6-44f5-8772-56a7494f9900"))
+/* dual interface */ IAuraSyncKeyboard;
+struct __declspec(uuid("81c61f82-4da0-4081-bdde-108e1fcdda7f"))
+/* dual interface */ IAuraRgbKeyCollection;
+struct __declspec(uuid("95e6c828-6de4-441e-873a-c44ae850f3a2"))
+/* dual interface */ IAuraRgbKey;
+struct __declspec(uuid("89871453-003c-474f-8ae3-177ed6bf2c37"))
+/* dual interface */ IAuraKeyboard;
+struct __declspec(uuid("935057ff-ddbe-4104-9795-f5566dcade33"))
+/* dual interface */ IAuraRgbKeyStateCollection;
+struct __declspec(uuid("1b527a31-8a3e-4477-964b-4681bbc02bdd"))
+/* dual interface */ IAuraRgbKeyState;
+struct __declspec(uuid("155f9e43-f16f-4de8-a126-267efe1b297c"))
+/* dual interface */ IAuraDeviceThermal;
+struct __declspec(uuid("51d73501-4480-4ac7-8e6a-748358d32872"))
+/* dual interface */ IAuraMotherboard;
+struct __declspec(uuid("0d48c518-f865-4a10-b5f5-d9c4f25b1071"))
+/* dual interface */ IAuraNotebookKeyboard;
+struct __declspec(uuid("ebc2ecdc-1b1b-4613-8972-19c0eceeb5bf"))
+/* dual interface */ IAuraMbLight;
+struct /* coclass */ AuraDevelopement;
+struct __declspec(uuid("3ced2297-27bd-492c-9934-d1d153b0fac1"))
+/* dual interface */ IAuraSdk;
+struct __declspec(uuid("87fc56ab-99ca-4fd3-b561-2eedd719da57"))
+/* dual interface */ IAuraSyncDeviceCollection;
+struct __declspec(uuid("ee69dbae-33ff-4e45-b378-01797a59852d"))
+/* dual interface */ IAuraSdk2;
+struct /* coclass */ AuraSdk;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IAuraRgbLight, __uuidof(IAuraRgbLight));
+_COM_SMARTPTR_TYPEDEF(IAuraRgbLightCollection, __uuidof(IAuraRgbLightCollection));
+_COM_SMARTPTR_TYPEDEF(IAuraSyncDevice, __uuidof(IAuraSyncDevice));
+_COM_SMARTPTR_TYPEDEF(IAuraEffect, __uuidof(IAuraEffect));
+_COM_SMARTPTR_TYPEDEF(IAuraEffectCollection, __uuidof(IAuraEffectCollection));
+_COM_SMARTPTR_TYPEDEF(IAuraRgbLightGroup, __uuidof(IAuraRgbLightGroup));
+_COM_SMARTPTR_TYPEDEF(IAuraRgbLightGroupCollection, __uuidof(IAuraRgbLightGroupCollection));
+_COM_SMARTPTR_TYPEDEF(IAuraDevice, __uuidof(IAuraDevice));
+_COM_SMARTPTR_TYPEDEF(IAuraDeviceCollection, __uuidof(IAuraDeviceCollection));
+_COM_SMARTPTR_TYPEDEF(IAuraHal, __uuidof(IAuraHal));
+_COM_SMARTPTR_TYPEDEF(IAuraHalInfo, __uuidof(IAuraHalInfo));
+_COM_SMARTPTR_TYPEDEF(IAuraHalInfoCollection, __uuidof(IAuraHalInfoCollection));
+_COM_SMARTPTR_TYPEDEF(IAuraDevelopement, __uuidof(IAuraDevelopement));
+_COM_SMARTPTR_TYPEDEF(IAuraMbHal, __uuidof(IAuraMbHal));
+_COM_SMARTPTR_TYPEDEF(IAuraHPHalIIDCollection, __uuidof(IAuraHPHalIIDCollection));
+_COM_SMARTPTR_TYPEDEF(IAuraHPHalDIDCollection, __uuidof(IAuraHPHalDIDCollection));
+_COM_SMARTPTR_TYPEDEF(IAuraHotPlugHal, __uuidof(IAuraHotPlugHal));
+_COM_SMARTPTR_TYPEDEF(IAuraRgbKey, __uuidof(IAuraRgbKey));
+_COM_SMARTPTR_TYPEDEF(IAuraRgbKeyCollection, __uuidof(IAuraRgbKeyCollection));
+_COM_SMARTPTR_TYPEDEF(IAuraSyncKeyboard, __uuidof(IAuraSyncKeyboard));
+_COM_SMARTPTR_TYPEDEF(IAuraRgbKeyState, __uuidof(IAuraRgbKeyState));
+_COM_SMARTPTR_TYPEDEF(IAuraRgbKeyStateCollection, __uuidof(IAuraRgbKeyStateCollection));
+_COM_SMARTPTR_TYPEDEF(IAuraKeyboard, __uuidof(IAuraKeyboard));
+_COM_SMARTPTR_TYPEDEF(IAuraDeviceThermal, __uuidof(IAuraDeviceThermal));
+_COM_SMARTPTR_TYPEDEF(IAuraMotherboard, __uuidof(IAuraMotherboard));
+_COM_SMARTPTR_TYPEDEF(IAuraNotebookKeyboard, __uuidof(IAuraNotebookKeyboard));
+_COM_SMARTPTR_TYPEDEF(IAuraMbLight, __uuidof(IAuraMbLight));
+_COM_SMARTPTR_TYPEDEF(IAuraSyncDeviceCollection, __uuidof(IAuraSyncDeviceCollection));
+_COM_SMARTPTR_TYPEDEF(IAuraSdk, __uuidof(IAuraSdk));
+_COM_SMARTPTR_TYPEDEF(IAuraSdk2, __uuidof(IAuraSdk2));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("9af6260e-4311-417d-b3ef-b85a34cf3244"))
+IAuraRgbLight : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetRed,put=PutRed))
+    unsigned char Red;
+    __declspec(property(get=GetGreen,put=PutGreen))
+    unsigned char Green;
+    __declspec(property(get=GetBlue,put=PutBlue))
+    unsigned char Blue;
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetColor,put=PutColor))
+    unsigned long Color;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    unsigned char GetRed ( );
+    void PutRed (
+        unsigned char pVal );
+    unsigned char GetGreen ( );
+    void PutGreen (
+        unsigned char pVal );
+    unsigned char GetBlue ( );
+    void PutBlue (
+        unsigned char pVal );
+    _bstr_t GetName ( );
+    unsigned long GetColor ( );
+    void PutColor (
+        unsigned long pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Red (
+        /*[out,retval]*/ unsigned char * pVal ) = 0;
+      virtual HRESULT __stdcall put_Red (
+        /*[in]*/ unsigned char pVal ) = 0;
+      virtual HRESULT __stdcall get_Green (
+        /*[out,retval]*/ unsigned char * pVal ) = 0;
+      virtual HRESULT __stdcall put_Green (
+        /*[in]*/ unsigned char pVal ) = 0;
+      virtual HRESULT __stdcall get_Blue (
+        /*[out,retval]*/ unsigned char * pVal ) = 0;
+      virtual HRESULT __stdcall put_Blue (
+        /*[in]*/ unsigned char pVal ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Color (
+        /*[out,retval]*/ unsigned long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Color (
+        /*[in]*/ unsigned long pVal ) = 0;
+};
+
+struct __declspec(uuid("003065bc-b562-454e-adcb-a9b70042d486"))
+IAuraRgbLightCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAuraRgbLightPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    IAuraRgbLightPtr GetItem (
+        long index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IAuraRgbLight * * pVal ) = 0;
+};
+
+struct __declspec(uuid("6a30d789-f5da-4f26-bf09-6dfb9dedf91e"))
+IAuraSyncDevice : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLights))
+    IAuraRgbLightCollectionPtr Lights;
+    __declspec(property(get=GetType))
+    unsigned long Type;
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetWidth))
+    unsigned long Width;
+    __declspec(property(get=GetHeight))
+    unsigned long Height;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAuraRgbLightCollectionPtr GetLights ( );
+    unsigned long GetType ( );
+    _bstr_t GetName ( );
+    unsigned long GetWidth ( );
+    unsigned long GetHeight ( );
+    HRESULT Apply ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Lights (
+        /*[out,retval]*/ struct IAuraRgbLightCollection * * value ) = 0;
+      virtual HRESULT __stdcall get_Type (
+        /*[out,retval]*/ unsigned long * value ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * value ) = 0;
+      virtual HRESULT __stdcall get_Width (
+        /*[out,retval]*/ unsigned long * value ) = 0;
+      virtual HRESULT __stdcall get_Height (
+        /*[out,retval]*/ unsigned long * value ) = 0;
+      virtual HRESULT __stdcall raw_Apply ( ) = 0;
+};
+
+struct __declspec(uuid("a9657187-6d1a-4387-aa54-98fe83d65b5c"))
+IAuraEffect : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetId))
+    long Id;
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetSynchronized))
+    long Synchronized;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetId ( );
+    _bstr_t GetName ( );
+    long GetSynchronized ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Id (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Synchronized (
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("84838733-137e-4e3f-b54f-3330b6962a38"))
+IAuraEffectCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAuraEffectPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    IAuraEffectPtr GetItem (
+        long index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IAuraEffect * * pVal ) = 0;
+};
+
+struct __declspec(uuid("068e02ff-335b-45a4-a6e4-184f19c6ae38"))
+IAuraRgbLightGroup : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAuraRgbLightPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetId))
+    unsigned long Id;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    IAuraRgbLightPtr GetItem (
+        long index );
+    _bstr_t GetName ( );
+    unsigned long GetId ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IAuraRgbLight * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Id (
+        /*[out,retval]*/ unsigned long * pVal ) = 0;
+};
+
+struct __declspec(uuid("2fb786dd-63fa-46cc-9d34-cb0dfdc6616f"))
+IAuraRgbLightGroupCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAuraRgbLightGroupPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    IAuraRgbLightGroupPtr GetItem (
+        long index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IAuraRgbLightGroup * * pVal ) = 0;
+};
+
+struct __declspec(uuid("9331bea3-2062-4e22-9297-1b3c065e909e"))
+IAuraDevice : IAuraSyncDevice
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetLightCount,put=PutLightCount))
+    long LightCount;
+    __declspec(property(get=GetEffects))
+    IAuraEffectCollectionPtr Effects;
+    __declspec(property(get=GetStandbyEffects))
+    IAuraEffectCollectionPtr StandbyEffects;
+    __declspec(property(get=GetManufacture))
+    _bstr_t Manufacture;
+    __declspec(property(get=GetModel))
+    _bstr_t Model;
+    __declspec(property(get=GetGroups))
+    IAuraRgbLightGroupCollectionPtr Groups;
+    __declspec(property(get=GetDefaultLightCount))
+    long DefaultLightCount;
+    __declspec(property(get=GetMaxLightCount))
+    long MaxLightCount;
+    __declspec(property(get=GetLightCountVariable))
+    unsigned long LightCountVariable;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT SetMode (
+        long mode );
+    HRESULT SetLightColor (
+        unsigned long index,
+        unsigned long Color );
+    long GetLightCount ( );
+    void PutLightCount (
+        long pVal );
+    IAuraEffectCollectionPtr GetEffects ( );
+    IAuraEffectCollectionPtr GetStandbyEffects ( );
+    HRESULT GetLayout (
+        unsigned long * Width,
+        unsigned long * Height,
+        unsigned long * depth );
+    HRESULT Synchronize (
+        unsigned long effectIndex,
+        unsigned long tickcount );
+    long GetDefaultLightCount ( );
+    long GetMaxLightCount ( );
+    unsigned long GetLightCountVariable ( );
+    _bstr_t GetManufacture ( );
+    _bstr_t GetModel ( );
+    IAuraRgbLightGroupCollectionPtr GetGroups ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_SetMode (
+        /*[in]*/ long mode ) = 0;
+      virtual HRESULT __stdcall raw_SetLightColor (
+        /*[in]*/ unsigned long index,
+        /*[in]*/ unsigned long Color ) = 0;
+      virtual HRESULT __stdcall get_LightCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall put_LightCount (
+        /*[in]*/ long pVal ) = 0;
+      virtual HRESULT __stdcall get_Effects (
+        /*[out,retval]*/ struct IAuraEffectCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall get_StandbyEffects (
+        /*[out,retval]*/ struct IAuraEffectCollection * * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetLayout (
+        /*[out]*/ unsigned long * Width,
+        /*[out]*/ unsigned long * Height,
+        /*[out]*/ unsigned long * depth ) = 0;
+      virtual HRESULT __stdcall raw_Synchronize (
+        /*[in]*/ unsigned long effectIndex,
+        /*[in]*/ unsigned long tickcount ) = 0;
+      virtual HRESULT __stdcall get_DefaultLightCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_MaxLightCount (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_LightCountVariable (
+        /*[out,retval]*/ unsigned long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Manufacture (
+        /*[out,retval]*/ BSTR * value ) = 0;
+      virtual HRESULT __stdcall get_Model (
+        /*[out,retval]*/ BSTR * value ) = 0;
+      virtual HRESULT __stdcall get_Groups (
+        /*[out,retval]*/ struct IAuraRgbLightGroupCollection * * value ) = 0;
+};
+
+struct __declspec(uuid("422f4703-45b9-460b-9530-b68e1173c292"))
+IAuraDeviceCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAuraDevicePtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    IAuraDevicePtr GetItem (
+        long index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IAuraDevice * * pVal ) = 0;
+};
+
+struct __declspec(uuid("86b5127b-4b88-4f02-8a59-7b7ff7bb53ef"))
+IAuraHal : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAuraDeviceCollectionPtr EumerateDevices ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_EumerateDevices (
+        /*[out,retval]*/ struct IAuraDeviceCollection * * value ) = 0;
+};
+
+struct __declspec(uuid("ba174006-7901-4396-8a8d-ba5327e45fc6"))
+IAuraHalInfo : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetGuid))
+    _bstr_t Guid;
+    __declspec(property(get=GetPluging))
+    unsigned long Pluging;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetGuid ( );
+    unsigned long GetPluging ( );
+    IAuraHalPtr CreateHal ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Guid (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_Pluging (
+        /*[out,retval]*/ unsigned long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_CreateHal (
+        /*[out,retval]*/ struct IAuraHal * * pVal ) = 0;
+};
+
+struct __declspec(uuid("8d34bb84-7521-4561-8ace-774ebb41a51b"))
+IAuraHalInfoCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAuraHalInfoPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    IAuraHalInfoPtr GetItem (
+        long index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IAuraHalInfo * * pVal ) = 0;
+};
+
+struct __declspec(uuid("9fcf439b-f9ed-4f93-b775-13305be23e55"))
+IAuraDevelopement : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAuraDeviceCollectionPtr GetAllDevices ( );
+    IAuraHalInfoCollectionPtr EumerateHalInfo ( );
+    IAuraDeviceCollectionPtr EumerateDevicesFromHal (
+        GUID * guids,
+        unsigned long Count );
+    HRESULT AURARequireToken (
+        unsigned long token );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_GetAllDevices (
+        /*[out,retval]*/ struct IAuraDeviceCollection * * value ) = 0;
+      virtual HRESULT __stdcall raw_EumerateHalInfo (
+        /*[out,retval]*/ struct IAuraHalInfoCollection * * value ) = 0;
+      virtual HRESULT __stdcall raw_EumerateDevicesFromHal (
+        /*[in]*/ GUID * guids,
+        /*[in]*/ unsigned long Count,
+        /*[out,retval]*/ struct IAuraDeviceCollection * * value ) = 0;
+      virtual HRESULT __stdcall raw_AURARequireToken (
+        /*[in]*/ unsigned long token ) = 0;
+};
+
+struct __declspec(uuid("9791cafe-7576-41ff-9dda-93a9619cf413"))
+IAuraMbHal : IAuraHal
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    unsigned long GetBiosOnOff ( );
+    HRESULT SetBiosOnOff (
+        unsigned long value );
+    unsigned long GetBiosStandbyOnOff ( );
+    HRESULT SetBiosStandbyOnOff (
+        unsigned long value );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_GetBiosOnOff (
+        /*[out,retval]*/ unsigned long * value ) = 0;
+      virtual HRESULT __stdcall raw_SetBiosOnOff (
+        /*[in]*/ unsigned long value ) = 0;
+      virtual HRESULT __stdcall raw_GetBiosStandbyOnOff (
+        /*[out,retval]*/ unsigned long * value ) = 0;
+      virtual HRESULT __stdcall raw_SetBiosStandbyOnOff (
+        /*[in]*/ unsigned long value ) = 0;
+};
+
+struct __declspec(uuid("9664e7f9-1314-4a8e-90b1-6a72dca3515c"))
+IAuraHPHalIIDCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _bstr_t Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    _bstr_t GetItem (
+        long index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long index,
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+};
+
+struct __declspec(uuid("b721f302-59ee-4101-a39f-b553804e6b67"))
+IAuraHPHalDIDCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    unsigned long Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    unsigned long GetItem (
+        long index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long index,
+        /*[out,retval]*/ unsigned long * pVal ) = 0;
+};
+
+struct __declspec(uuid("f9718389-f460-45b4-9cc7-b546a7dfb7b1"))
+IAuraHotPlugHal : IAuraHal
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAuraHPHalIIDCollectionPtr GetAllInterfaceGuids ( );
+    IAuraHPHalDIDCollectionPtr GetAllDeviceIds ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_GetAllInterfaceGuids (
+        /*[out,retval]*/ struct IAuraHPHalIIDCollection * * value ) = 0;
+      virtual HRESULT __stdcall raw_GetAllDeviceIds (
+        /*[out,retval]*/ struct IAuraHPHalDIDCollection * * value ) = 0;
+};
+
+struct __declspec(uuid("95e6c828-6de4-441e-873a-c44ae850f3a2"))
+IAuraRgbKey : IAuraRgbLight
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCode))
+    unsigned short Code;
+    __declspec(property(get=GetX))
+    long X;
+    __declspec(property(get=GetY))
+    long Y;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    unsigned short GetCode ( );
+    long GetX ( );
+    long GetY ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Code (
+        /*[out,retval]*/ unsigned short * pVal ) = 0;
+      virtual HRESULT __stdcall get_X (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Y (
+        /*[out,retval]*/ long * pVal ) = 0;
+};
+
+struct __declspec(uuid("81c61f82-4da0-4081-bdde-108e1fcdda7f"))
+IAuraRgbKeyCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAuraRgbKeyPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    IAuraRgbKeyPtr GetItem (
+        long index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IAuraRgbKey * * pVal ) = 0;
+};
+
+struct __declspec(uuid("87b03dd6-59e6-44f5-8772-56a7494f9900"))
+IAuraSyncKeyboard : IAuraSyncDevice
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetKey))
+    IAuraRgbLightPtr Key[];
+    __declspec(property(get=GetKeys))
+    IAuraRgbKeyCollectionPtr Keys;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAuraRgbLightPtr GetKey (
+        unsigned short keyCode );
+    IAuraRgbKeyCollectionPtr GetKeys ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Key (
+        /*[in]*/ unsigned short keyCode,
+        /*[out,retval]*/ struct IAuraRgbLight * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Keys (
+        /*[out,retval]*/ struct IAuraRgbKeyCollection * * value ) = 0;
+};
+
+struct __declspec(uuid("1b527a31-8a3e-4477-964b-4681bbc02bdd"))
+IAuraRgbKeyState : IAuraRgbKey
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetState))
+    unsigned long State;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    unsigned long GetState ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_State (
+        /*[out,retval]*/ unsigned long * pVal ) = 0;
+};
+
+struct __declspec(uuid("935057ff-ddbe-4104-9795-f5566dcade33"))
+IAuraRgbKeyStateCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAuraRgbKeyStatePtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    IAuraRgbKeyStatePtr GetItem (
+        long index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IAuraRgbKeyState * * pVal ) = 0;
+};
+
+struct __declspec(uuid("89871453-003c-474f-8ae3-177ed6bf2c37"))
+IAuraKeyboard : IAuraDevice
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetKey))
+    IAuraRgbLightPtr Key[];
+    __declspec(property(get=GetKeys))
+    IAuraRgbKeyCollectionPtr Keys;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAuraRgbLightPtr GetKey (
+        unsigned short keyCode );
+    IAuraRgbKeyCollectionPtr GetKeys ( );
+    IAuraRgbKeyStateCollectionPtr WaitKeyInput (
+        void * event,
+        unsigned long timeout );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Key (
+        /*[in]*/ unsigned short keyCode,
+        /*[out,retval]*/ struct IAuraRgbLight * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Keys (
+        /*[out,retval]*/ struct IAuraRgbKeyCollection * * value ) = 0;
+      virtual HRESULT __stdcall raw_WaitKeyInput (
+        void * event,
+        unsigned long timeout,
+        /*[out,retval]*/ struct IAuraRgbKeyStateCollection * * value ) = 0;
+};
+
+struct __declspec(uuid("155f9e43-f16f-4de8-a126-267efe1b297c"))
+IAuraDeviceThermal : IAuraDevice
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetTemperature ( );
+    _bstr_t GetTemperatureName ( );
+    HRESULT Reset ( );
+    unsigned long IsResetSupported ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_GetTemperature (
+        /*[out,retval]*/ long * value ) = 0;
+      virtual HRESULT __stdcall raw_GetTemperatureName (
+        /*[out,retval]*/ BSTR * value ) = 0;
+      virtual HRESULT __stdcall raw_Reset ( ) = 0;
+      virtual HRESULT __stdcall raw_IsResetSupported (
+        /*[out,retval]*/ unsigned long * value ) = 0;
+};
+
+struct __declspec(uuid("51d73501-4480-4ac7-8e6a-748358d32872"))
+IAuraMotherboard : IAuraDeviceThermal
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=Getmode,put=Putmode))
+    unsigned long mode;
+    __declspec(property(get=GetStandbyLights))
+    IAuraRgbLightCollectionPtr StandbyLights;
+    __declspec(property(get=GetStandbyMode,put=PutStandbyMode))
+    unsigned long StandbyMode;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT SetStandbyMode (
+        unsigned long index );
+    HRESULT SetStandbyLightColor (
+        unsigned long index,
+        unsigned long Color );
+    HRESULT ApplyStandby ( );
+    IAuraRgbLightCollectionPtr GetStandbyLights ( );
+    HRESULT put_StandbyDirection (
+        unsigned long pVal );
+    HRESULT put_StandbySpeed (
+        unsigned long pVal );
+    unsigned long GetStandbyMode ( );
+    void PutStandbyMode (
+        unsigned long pVal );
+    unsigned long Getmode ( );
+    void Putmode (
+        unsigned long pVal );
+    HRESULT RefreshStandbyStatus ( );
+    HRESULT RefreshStatus ( );
+    HRESULT SetEnabled (
+        unsigned long pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_SetStandbyMode (
+        /*[in]*/ unsigned long index ) = 0;
+      virtual HRESULT __stdcall raw_SetStandbyLightColor (
+        /*[in]*/ unsigned long index,
+        /*[in]*/ unsigned long Color ) = 0;
+      virtual HRESULT __stdcall raw_ApplyStandby ( ) = 0;
+      virtual HRESULT __stdcall get_StandbyLights (
+        /*[out,retval]*/ struct IAuraRgbLightCollection * * value ) = 0;
+      virtual HRESULT __stdcall raw_put_StandbyDirection (
+        /*[in]*/ unsigned long pVal ) = 0;
+      virtual HRESULT __stdcall raw_put_StandbySpeed (
+        /*[in]*/ unsigned long pVal ) = 0;
+      virtual HRESULT __stdcall get_StandbyMode (
+        /*[out,retval]*/ unsigned long * pVal ) = 0;
+      virtual HRESULT __stdcall put_StandbyMode (
+        /*[in]*/ unsigned long pVal ) = 0;
+      virtual HRESULT __stdcall get_mode (
+        /*[out,retval]*/ unsigned long * pVal ) = 0;
+      virtual HRESULT __stdcall put_mode (
+        /*[in]*/ unsigned long pVal ) = 0;
+      virtual HRESULT __stdcall raw_RefreshStandbyStatus ( ) = 0;
+      virtual HRESULT __stdcall raw_RefreshStatus ( ) = 0;
+      virtual HRESULT __stdcall raw_SetEnabled (
+        /*[in]*/ unsigned long pVal ) = 0;
+};
+
+struct __declspec(uuid("0d48c518-f865-4a10-b5f5-d9c4f25b1071"))
+IAuraNotebookKeyboard : IAuraDeviceThermal
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetKey))
+    IAuraRgbLightPtr Key[];
+    __declspec(property(get=GetKeys))
+    IAuraRgbKeyCollectionPtr Keys;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAuraRgbLightPtr GetKey (
+        unsigned short keyCode );
+    IAuraRgbKeyCollectionPtr GetKeys ( );
+    IAuraRgbKeyStateCollectionPtr WaitKeyInput (
+        void * event,
+        unsigned long timeout );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Key (
+        /*[in]*/ unsigned short keyCode,
+        /*[out,retval]*/ struct IAuraRgbLight * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Keys (
+        /*[out,retval]*/ struct IAuraRgbKeyCollection * * value ) = 0;
+      virtual HRESULT __stdcall raw_WaitKeyInput (
+        void * event,
+        unsigned long timeout,
+        /*[out,retval]*/ struct IAuraRgbKeyStateCollection * * value ) = 0;
+};
+
+struct __declspec(uuid("ebc2ecdc-1b1b-4613-8972-19c0eceeb5bf"))
+IAuraMbLight : IAuraRgbLight
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetSpeed,put=PutSpeed))
+    unsigned long Speed;
+    __declspec(property(get=GetDirection,put=PutDirection))
+    unsigned long Direction;
+    __declspec(property(get=GetLocationId))
+    unsigned long LocationId;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    unsigned long GetSpeed ( );
+    void PutSpeed (
+        unsigned long pVal );
+    unsigned long GetDirection ( );
+    void PutDirection (
+        unsigned long pVal );
+    unsigned long GetLocationId ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Speed (
+        /*[out,retval]*/ unsigned long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Speed (
+        /*[in]*/ unsigned long pVal ) = 0;
+      virtual HRESULT __stdcall get_Direction (
+        /*[out,retval]*/ unsigned long * pVal ) = 0;
+      virtual HRESULT __stdcall put_Direction (
+        /*[in]*/ unsigned long pVal ) = 0;
+      virtual HRESULT __stdcall get_LocationId (
+        /*[out,retval]*/ unsigned long * pVal ) = 0;
+};
+
+struct __declspec(uuid("34b707dc-1133-4ebc-b380-21387a50a89d"))
+AuraDevelopement;
+    // [ default ] interface IAuraDevelopement
+
+struct __declspec(uuid("87fc56ab-99ca-4fd3-b561-2eedd719da57"))
+IAuraSyncDeviceCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    IAuraSyncDevicePtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    long GetCount ( );
+    IAuraSyncDevicePtr GetItem (
+        long index );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long index,
+        /*[out,retval]*/ struct IAuraSyncDevice * * pVal ) = 0;
+};
+
+struct __declspec(uuid("3ced2297-27bd-492c-9934-d1d153b0fac1"))
+IAuraSdk : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IAuraSyncDeviceCollectionPtr Enumerate (
+        unsigned long devType );
+    HRESULT SwitchMode ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Enumerate (
+        /*[in]*/ unsigned long devType,
+        /*[out,retval]*/ struct IAuraSyncDeviceCollection * * value ) = 0;
+      virtual HRESULT __stdcall raw_SwitchMode ( ) = 0;
+};
+
+struct __declspec(uuid("ee69dbae-33ff-4e45-b378-01797a59852d"))
+IAuraSdk2 : IAuraSdk
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT ReleaseControl (
+        unsigned long reserve );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_ReleaseControl (
+        unsigned long reserve ) = 0;
+};
+
+struct __declspec(uuid("05921124-5057-483e-a037-e9497b523590"))
+AuraSdk;
+    // [ default ] interface IAuraSdk
+
+//
+// Wrapper method implementations
+//
+
+#include "E:\Documentos\Proyectos Personales\Mios\AuraTutorial\AuraTutorial\Debug\AuraSdk_x86.tli"
+
+} // namespace AuraServiceLib
+
+#pragma pack(pop)
