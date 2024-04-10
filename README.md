@@ -2,6 +2,8 @@
 
 [![NPM Version](https://img.shields.io/npm/v/aura-sdk.svg)](https://www.npmjs.com/package/aura-sdk)
 
+> DEPRECATION NOTICE: I no longer own a PC with Aura RGB components, so I can no longer maintain this library (I don't have any hardware to test it). Feel free to fork the repository if you wish.
+
 ASUS Aura's SDK Nodejs C++ bindings. This package provides an high-level API
 to manage your rig led show!
 
